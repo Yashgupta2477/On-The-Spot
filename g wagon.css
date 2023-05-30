@@ -1,0 +1,20 @@
+body{
+    background-color: black;
+    background-image: url('Mercedes_G_Wagon/AdobeStock_436879734_Preview_Editorial_Use_Only.jpeg') ;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+
+
+
+.img-container{
+    align-self: center;
+}
+  h1{
+        background-color:white;
+        text-align:center;
+        text-transform:uppercase;
+        position: relative;
+    }
