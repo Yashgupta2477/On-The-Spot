@@ -1,17 +1,10 @@
-p { color: white }
-html { 
+ p{text-align: center;}
+body{
   background-image: url('Background/Image (2).jpeg');
   background-repeat: no-repeat;
-  background-size: cover;
-}
-
+  background-size:cover
   
-
-
-
-
-
-
+}
 ul {
     list-style-type: none;
     margin: 0;
@@ -66,7 +59,7 @@ img{
   height:100vw;
 }
 .page {
-  text-align:end;
+  text-align:left;  
 }
 
 
