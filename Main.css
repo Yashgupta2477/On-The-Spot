@@ -1,6 +1,5 @@
  p{text-align: center;}
 body{
-  background-image: url('Background/Image (2).jpeg');
   background-repeat: no-repeat;
   background-size:cover
   
@@ -59,7 +58,8 @@ img{
   height:100vw;
 }
 .page {
-  text-align:left;  
+  text-align: start;
+  
 }
 
 
@@ -71,6 +71,11 @@ img{
   transform: translate(-50%, -50%);
 }
 
-
+.top-cars{
+  text-align: center;
+  
+  background-color: white;
+  
+}
   
 
