@@ -1,9 +1,5 @@
  p{text-align: center;}
-body{
-  background-repeat: no-repeat;
-  background-size:cover
-  
-}
+
 ul {
     list-style-type: none;
     margin: 0;
@@ -73,9 +69,14 @@ img{
 
 .top-cars{
   text-align: center;
+  background-image: url('Background\Background.jpeg');
+  background-repeat: no-repeat;
+  background-size: fill;
   
-  background-color: white;
-  
+
+
 }
+
+
   
 
