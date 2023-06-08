@@ -1,0 +1,19 @@
+.container{
+    background-image: url('Background.jpeg');
+    height: 100vh;
+    width: 100vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+h1 {
+    color :white;
+    text-align: center;
+   
+}
