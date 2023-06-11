@@ -82,16 +82,31 @@ img{
 * {
   margin: 0;
   padding: 0;
+  
 }
 
 h1{
-  color:#fff;
+  color: #fff;
   text-align: center;
+  margin-top:calc(50vh);
+  
+  
+
 }
 h2{
   color: #fff;
 
 }
+span{
+  color: #333;
+  text-decoration: underline;
+}
+  
+
+
+  
+
+
 
 
 
