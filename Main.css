@@ -101,10 +101,14 @@ span{
   color: #333;
   text-decoration: underline;
 }
- 
-.choose-container{
-  display: inline;
+
+.brand-container{
+  background-color: red;
 }
+  
+
+
+  
 
   
 
