@@ -95,11 +95,16 @@ h2{
 }
 span{
   color: #333;
-  text-decoration: underline;
 }
 
 .brand-container{
-  color: black;
+color: #333;
+display: flex;
+justify-content: flex-start;
+flex-direction: column;
+margin: 15px;
+padding: 15px;
+
 
 }
   
