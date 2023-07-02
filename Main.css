@@ -94,7 +94,7 @@ h2{
 
 }
 span{
-  color: #333;
+  color: black;
 }
 
 .brand-container{
@@ -105,6 +105,11 @@ flex-direction: column;
 margin: 15px;
 padding: 15px;
 
+
+}
+
+
+.latest-news{
 
 }
   
