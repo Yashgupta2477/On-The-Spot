@@ -1,0 +1,20 @@
+html {
+    width: 100%;
+}
+
+body{
+    background-image: url('rsq8/background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+.background{
+    color: white;
+    text-align: center;
+    font-size: 10px;
+}
+.exterior{
+color: white;
+height: 100%;
+width: 100%;
+}
