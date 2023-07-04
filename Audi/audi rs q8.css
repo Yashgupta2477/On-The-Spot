@@ -1,20 +1,27 @@
 html {
-    width: 100%;
+   width: 100px;
 }
 
 body{
     background-image: url('rsq8/background.jpg');
     background-repeat: no-repeat;
     background-size: cover;
+    height: 120vh;
+    width: 100vw;
+    display: flex;
     
 }
 .background{
     color: white;
     text-align: center;
-    font-size: 10px;
+    font-size: 20px;
+
+    
 }
 .exterior{
-color: white;
-height: 100%;
-width: 100%;
+color: black;
+position: relative;
+margin-top: calc(120vh);
+text-align: center;
+
 }
