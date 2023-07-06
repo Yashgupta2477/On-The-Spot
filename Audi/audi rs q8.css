@@ -6,8 +6,7 @@ body{
     background-image: url('rsq8/background.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    height: 120vh;
-    width: 100vw;
+    
     display: flex;
     
 }
@@ -23,6 +22,7 @@ color: black;
 position: relative;
 margin-top: calc(120vh);
 text-align: center;
+display: inline;
 
 
 }
