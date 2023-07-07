@@ -5,7 +5,8 @@ html {
 body{
     background-image: url('rsq8/background.jpg');
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size:fill;
+    
     
     display: flex;
     
@@ -20,7 +21,7 @@ body{
 .exterior{
 color: black;
 position: relative;
-margin-top: calc(120vh);
+margin-top: calc(150vh);
 text-align: center;
 display: inline;
 
