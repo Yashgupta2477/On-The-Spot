@@ -5,22 +5,28 @@ body{
     background-repeat: no-repeat;
     background-size:cover;
     height: 100vh;
-    width: 110vw;
+    width: 100%;
     display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    
+    
     
 }
 .background{
     color: white;
     font-size: 20px;
     text-align: center;
+    
 
     
 }
 .exterior{
 color: black;
-position: relative;
-margin-top: calc(120vh);
-display: inline;
+margin-top: calc(110vh);
+
+
 
 
 }

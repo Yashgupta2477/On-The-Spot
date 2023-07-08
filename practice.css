@@ -1,22 +1,7 @@
-body {
-    background-image: url('background.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100vh;
-    width: 110vw;
-    display: flex;
-  }
-  
-  .page-header {
-    color: white;
-    font-size: 20px;
-    text-align: center;
-  }
-  
-  .main-content {
-    color: black;
-    position: relative;
-    margin-top: calc(120vh);
-    display: inline;
-  }
+.nigga{
+    max-height: 100%;
+    max-width: 100%;
+    height: 100vw;
+    width: 100vh;
+}
   
