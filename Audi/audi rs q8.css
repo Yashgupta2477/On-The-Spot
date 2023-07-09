@@ -1,21 +1,38 @@
-
-
-body{
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  nav {
+    background-color: white;
+    color: black;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav ul li {
+    display: inline-flex;
+    align-items: flex-end;
+    justify-content:flex-end
+    
+  }
+  
+  nav ul li a {
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+    color: black;
+  }
+  body{
     background-image: url('rsq8/background.jpg');
     background-repeat: no-repeat;
     background-size:cover;
     height: 100vh;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    
-
-
-
-    
-    
-    
+    width: 100vw;
 }
 .background{
     color: white;
@@ -24,12 +41,4 @@ body{
     
 
     
-}
-.exterior{
-color: black;
-margin-top: calc(110vh);
-
-
-
-
 }
