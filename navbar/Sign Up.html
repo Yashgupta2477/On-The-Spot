@@ -28,7 +28,7 @@
             <input type="button" value="Submit" />
           <closeform></closeform></form>
           <p>
-            By clicking the Sign Up button,you agree to our <br />
+            By clicking the Sign Up button,you agree to our <br/>
             <a href="Terms and Condition.html">Terms and Condition</a> and <a href="Terms and Condition.html">Policy Privacy</a>
           </p>
         </div>
@@ -36,42 +36,40 @@
           Already have an account? <a href="login.html">Login here</a>
         </p>
           
-        <title>Login</title>
-        <link rel="stylesheet" href="Css/style.css" />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
-          rel="stylesheet"
+       
         </form>
-
-        <h2> OR Sign Up with Google </h2>
+<div class="google">
+  <h2> OR Sign Up with Google </h2>
         
   
-        <head>
-          <!--Google Form-->
-    <title>Google Sign-In Example</title>
-    <script src="https://apis.google.com/js/platform.js" async defer></script>
-    <meta name="google-signin-client_id" content="YOUR_CLIENT_ID.apps.googleusercontent.com">
-    <script>
-      function onSignIn(googleUser) {
-        // Get the user's ID token and basic profile information
-        var id_token = googleUser.getAuthResponse().id_token;
-        var profile = googleUser.getBasicProfile();
-        
-        // Send the ID token and profile information to your server-side code for verification and registration
-        // In this example, we're using jQuery to send a POST request to our server
-        $.post("/signup", {
-          id_token: id_token,
-          name: profile.getName(),
-          email: profile.getEmail()
-        })
-        .done(function(data) {
-          alert("User signed up successfully: " + data);
-        });
-      }
-    </script>
-  </head>
-  <body>
-    <div class="g-signin2" data-onsuccess="onSignIn"></div>
+  <head>
+    <!--Google Form-->
+<title>Google Sign-In Example</title>
+<script src="https://apis.google.com/js/platform.js" async defer></script>
+<meta name="google-signin-client_id" content="YOUR_CLIENT_ID.apps.googleusercontent.com">
+<script>
+function onSignIn(googleUser) {
+  // Get the user's ID token and basic profile information
+  var id_token = googleUser.getAuthResponse().id_token;
+  var profile = googleUser.getBasicProfile();
+  
+  // Send the ID token and profile information to your server-side code for verification and registration
+  // In this example, we're using jQuery to send a POST request to our server
+  $.post("/signup", {
+    id_token: id_token,
+    name: profile.getName(),
+    email: profile.getEmail()
+  })
+  .done(function(data) {
+    alert("User signed up successfully: " + data);
+  });
+}
+</script>
+</head>
+<body>
+<div class="g-signin2" data-onsuccess="onSignIn"></div>
+</div>
+       
     
         
       </head>

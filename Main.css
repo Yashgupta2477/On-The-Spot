@@ -28,9 +28,7 @@ ul {
     color: black;
   }
   
-  nav ul li a:hover {
-   
-  } 
+ 
 
  
 
@@ -75,17 +73,18 @@ span{
 color: #333;
 display: flex;
 justify-content: flex-start;
+padding-left: 50px;
+margin-top: 50px;
+justify-content: space-between ;
+flex: 1;
 
-margin: 15px;
-padding: 15px;
+
 
 
 }
 
 
-.latest-news{
 
-}                                                
 
   
 
