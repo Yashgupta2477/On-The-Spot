@@ -9,12 +9,7 @@ ul {
     background-color: white;
     color: black;
   }
-  
-  nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-  }
+
   
   nav ul li {
     display: inline-block;
@@ -35,7 +30,7 @@ ul {
  
  
 .container {
-  background-image: url('Background/Background.jpeg');
+  background-image: url('Background/Background.png');
   height: 100vh;
   width: 100vw;
   background-repeat: no-repeat;
