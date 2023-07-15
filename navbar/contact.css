@@ -20,7 +20,7 @@ body{
     width: 80vw;
     margin-top: 30px;
     margin-left: 1090px;
-    margin-right: 50px;
+    margin-right: 90px;
     
     background-color: white;
 }
@@ -50,13 +50,12 @@ form input{
     padding: 7px;
     border: none;
     border: 1px solid gray;
-    border-radius: 6px;
     outline: none;
 
 }
 input[type="text"]{
     height: 200px;
-    width: 500px;
+    width: 100%;
     
 }
 input[type="name"]{
@@ -71,7 +70,6 @@ input[type="email"]{
 }
 button{
     margin-top: 10px;
-
     border: none;
     padding: 10px 20px;
     text-align: center;
@@ -79,7 +77,7 @@ button{
     display: inline-block;
     font-size: 16px;
     cursor: pointer;
-    border-radius: 4px;
+   
   }
 
 
