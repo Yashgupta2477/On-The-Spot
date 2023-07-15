@@ -7,15 +7,9 @@ body{
     background-image:url('background.jpg');
     background-size: cover;
     background-position: center;
-    background-attachment: fixed;
-   
-    
+    background-attachment: fixed;   
+    background-repeat: no-repeat;
 }
-   
-
-   
-
-
 
 .feedback{
     display: flex
@@ -25,7 +19,8 @@ body{
     height: 90vh;
     width: 80vw;
     margin-top: 30px;
-    margin-left: 900px;
+    margin-left: 1090px;
+    margin-right: 50px;
     
     background-color: white;
 }
@@ -35,7 +30,10 @@ body{
 
 .logo{
     display: flex;
-    align-items: baseline;
+    margin-top: 100px;
+    margin-left: 20px;
+    justify-content: space-between;
+
 }
 form{
     width: 360px;
@@ -56,6 +54,35 @@ form input{
     outline: none;
 
 }
+input[type="text"]{
+    height: 200px;
+    width: 500px;
+    
+}
+input[type="name"]{
+    border: none;
+  border-bottom: 2px solid black;
+  outline: none;
+}
+input[type="email"]{
+    border: none;
+  border-bottom: 2px solid black;
+  outline: none;
+}
+button{
+    margin-top: 10px;
+
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+
+
 
 
 
