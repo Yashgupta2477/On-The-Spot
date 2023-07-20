@@ -5,12 +5,11 @@ ul {
     margin: 0;
     padding: 0;
   }
+
   nav {
-    background-color;
     color: black;
   }
 
-  
   nav ul li {
     display: inline-block;
     text-decoration: underline;
@@ -21,14 +20,7 @@ ul {
     padding: 15px;
     text-decoration: none;
     color: black;
-  }
-  
- 
-
- 
-
- 
- 
+  } 
 .container {
   background-image: url('Background/Background.png');
   height: 100vh;
@@ -39,8 +31,6 @@ ul {
   align-items: center ;
   justify-content:center;
   flex-direction: column;
-
-  
 }
 
 * {
@@ -48,18 +38,16 @@ ul {
   padding: 0;
   
 }
-
 h1{
   color: #fff;
   text-align: center;
-  
-  
-
 }
+
 h2{
   color: #fff;
 
 }
+
 span{
   color: black;
 }
@@ -72,11 +60,8 @@ padding-left: 50px;
 margin-top: 50px;
 justify-content: space-between ;
 flex: 1;
-
-
-
-
 }
+
 
 
 
