@@ -1,0 +1,18 @@
+nav {
+   display: flex;
+   justify-content: flex-end;
+ }
+ 
+ .nav-items {
+   list-style: none;
+   display: flex;
+   align-items: center;
+ }
+ 
+ .nav-items li {
+   margin: 0 10px;
+ }
+ 
+ .nav-items li a {
+   text-decoration: none;
+   
