@@ -14,6 +14,7 @@ body {
   background-blend-mode: lighten;
   margin: 0;
   padding: 0;
+  height: 100vh;
 }
 
 .nav-items {
@@ -25,7 +26,8 @@ body {
   padding: 0;
   margin: 0;
   justify-content: space-between;
-  background-color: #1D1D1D;
+  background-color: #1d1d1d;
+  border: soli white;
 }
 .nav-items img {
   height: 64px;
@@ -40,8 +42,6 @@ body {
   margin-right: 0;
 }
 nav {
-  
-
   height: 64px;
 }
 nav ul {
@@ -55,39 +55,36 @@ nav ul li {
   justify-content: end;
   align-items: end;
   padding: 20px;
- 
 }
 nav ul li a {
-  color: #D9D9D9;
+  color: #d9d9d9;
 }
 
 .title {
   margin-top: calc(30vh);
- text-align: center;
+  text-align: center;
   color: white;
   display: grid;
-  place-items: center;;
+  place-items: center;
 }
-.title h2{
+.title h2 {
   width: 16.5ch;
-  animation: typing 2s steps(22), blink .5s step-end infinite alternate;
+  animation: typing 2s steps(22), blink 0.5s step-end infinite alternate;
   white-space: nowrap;
   overflow: hidden;
   border-right: 3px solid;
   color: purple;
   text-decoration: underline purple;
-  
- 
 }
 @keyframes typing {
   from {
-    width: 0
+    width: 0;
   }
 }
-    
+
 @keyframes blink {
   50% {
-    border-color: transparent
+    border-color: transparent;
   }
 }
 
@@ -102,8 +99,7 @@ nav ul li a {
   justify-content: space-between;
 }
 
-@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
-}
-.animate-fade-in {
+.choose {
   color: #fff;
+  margin-top: calc(100vh);
 }
