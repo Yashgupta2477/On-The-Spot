@@ -26,8 +26,7 @@ body {
   padding: 0;
   margin: 0;
   justify-content: space-between;
-  background-color: #1d1d1d;
-  border: solid white;
+  background-color: rgba(138, 133, 133, 0.067);
 }
 .nav-items img {
   height: 64px;
