@@ -27,7 +27,7 @@ body {
   margin: 0;
   justify-content: space-between;
   background-color: #1d1d1d;
-  border: soli white;
+  border: solid white;
 }
 .nav-items img {
   height: 64px;
@@ -98,8 +98,22 @@ nav ul li a {
   flex: 1;
   justify-content: space-between;
 }
+.page {
+  background: #1d1d1d;
+  margin: 0;
+  padding: 0;
+}
 
 .choose {
-  color: #fff;
-  margin-top: calc(100vh);
+  color: white;
+  margin-top: calc(25em);
+  text-align: center;
+  text-decoration: underline;
+  text-shadow: #fff;
+}
+.logo-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 15px 15px 15px 15px;
+  padding: 15px 15px 15px;
 }
