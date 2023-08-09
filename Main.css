@@ -1,6 +1,9 @@
 /**
  * The '@font-face' class defines the font-family and source for the Gealsio font.
  */
+ @tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 @font-face {
   font-family: Gealsio;
@@ -97,10 +100,18 @@ nav ul li a {
   flex: 1;
   justify-content: space-between;
 }
+.ad-1{
+  margin-top: calc(65vh);
+  height: 100px;
+  width: 100%;
+  background-color: red;
+}
 .page {
   background: #1d1d1d;
   margin: 0;
   padding: 0;
+  margin-top: -390px;
+ 
 }
 
 .choose {
@@ -116,3 +127,14 @@ nav ul li a {
   margin: 15px 15px 15px 15px;
   padding: 15px 15px 15px;
 }
+.latest-cars{
+  background-color: red;
+  display: flex;
+  justify-content: center;
+  height: 500px;
+ 
+}
+.heading{
+  
+}
+

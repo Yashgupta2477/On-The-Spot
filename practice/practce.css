@@ -1,1 +1,26 @@
+/* CSS reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+/* Define variables */
+:root {
+  --circle-size: 50%;
+  --circle-color: yellow;
+}
+
+/* Circular shape */
+.circle {
+  width: var(--circle-size);
+  height: var(--circle-size);
+  background-color: var(--circle-color);
+  border-radius: 50%;
+}
+
+/* Small version of the circle */
+.circle.small {
+  width: calc(var(--circle-size) / 2);
+  height: calc(var(--circle-size) / 2);
+}
