@@ -17,7 +17,7 @@
 }
 
 body {
-  background-image: url("Background/Background.png");
+  background-image: url('Background/Background.png');
   background-repeat: no-repeat;
   background-size: cover;
   background-blend-mode: lighten;
