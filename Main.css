@@ -28,12 +28,10 @@ body {
 form.nosubmit {
   border: none;
   padding: 0;
+  outline: none;
 }
 
 input.nosubmit {
-  width: 260px;
-  border: 1px solid #555;
-  display: block;
   padding: 9px 4px 9px 40px;
   background: rgb(107, 105, 105)
     url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' class='bi bi-search' viewBox='0 0 16 16'%3E%3Cpath d='M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z'%3E%3C/path%3E%3C/svg%3E")
@@ -96,6 +94,11 @@ nav ul li a {
   place-items: center;
   font-size: 20px;
 }
+.title h1{
+  font-size: 50px;
+  font-weight: 100;
+  font-
+}
 
 .title h2 {
   width: 16.5ch;
@@ -137,47 +140,6 @@ nav ul li a {
   display: flex;
 }
 
-.page {
-  height: 190px;
-  width: 100%;
-  margin: -390px 0px 0px 0px;
-  padding: 0px 0px 0px 0px;
-  background-color: yellow;
-}
-
-.choose {
-  color: rgb(82, 7, 7);
-  margin-top: calc(25em);
-  text-align: center;
-  text-decoration: underline;
-  text-shadow: #fff;
-}
-.choose:hover {
-  color: white;
-}
-
-.logo-container {
-  display: flex;
-  justify-content: space-between;
-  margin: 15px;
-  padding: 15px;
-  border: #333 solid 1px;
-}
-
-.ad-2 {
-  display: flex;
-  background-color: red;
-  margin: 0;
-  padding: 0;
-}
-
-.latest-cars {
-  background-color: blue;
-  display: flex;
-  justify-content: center;
-  height: 500px;
-}
-/* Default styles */
 
 /* Add your default CSS styles here */
 

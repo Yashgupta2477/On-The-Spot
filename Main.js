@@ -1,13 +1,8 @@
-const inquirer = require('inquirer');
+function myFunction() {
+    return (a - b) / 2;
+}
 
-const questions = [
-  {
-    type: 'input',
-    name: 'name',
-    message: 'Enter your name:',
-  },
-];
+let a = 53;
+let b = 52;
 
-inquirer.prompt(questions).then((answers) => {
-  console.log(`Hello, ${answers.name}!`);
-});
+console.log(myFunction()); 
