@@ -1,3 +1,4 @@
+/*  */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -15,6 +16,7 @@
   font-family: "Alieron";
   src: url(fonts/Alieron/Aileron-Light.otf);
 }
+/* End Importing Fonts */
 
 body {
   height: 100vh;
