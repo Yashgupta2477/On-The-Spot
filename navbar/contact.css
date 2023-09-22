@@ -1,204 +1,141 @@
-/* 
-CSS class for styling the body element of a webpage.
-Includes background image and color, text decoration, and color variables.
-Also includes styling for a feedback form.
-*/
+* {
+  font-family: Gelasio;
+  margin: 0;
+  padding: 0;
+  font-size: ;
+}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  font-family: Alieron;
+  font-weight: 12;
+}
+/* Importing Fonts  */
+@font-face {
+  font-family: "Gealsio";
+  src: url(fonts/Gelasio/Gelasio-Regular.ttf);
+}
+@font-face {
+  font-family: "Alieron";
+  src: url(fonts/Alieron/Aileron-Light.otf);
+}
 
 body {
-  /* Text decoration */
-  text-decoration: #fcfcfd;
-
-  /* Background */
-  --background: #030203;
-  --primary: #c3c1c2;
-  --secondary: #0d0d0c;
-  --accent: #8d918f;
   background-image: url("background.jpg");
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
   background-repeat: no-repeat;
+  background-size: cover;
   height: 100vh;
-  opacity: ;
-
-  /* Feedback form */
-
-}
-
-
-
-.form {
-  margin-left: 20px;
-}
-
-.form label {
-  font-size: 16px;
-}
-
-.input-field {
   width: 100%;
-
-  margin-bottom: 10px;
-
-  padding: 5px;
-
-  border: 1px solid var(--primary);
-
-  outline: none;
-}
-
-.button {
-  padding: 10px 20px;
-
-  border: none;
-
-  background-color: var(--primary);
-
-  color: var(--background);
-
-  cursor: pointer;
-}
-
-.feedback {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border: 1px solid black;
-  margin: 10px;
-  height: 200px;
-  width: 300px;
-  background-color: #f2f2f2;
-}
-
-.sign-up {
-  border: 2px solid black;
-
-  margin-top: 20px;
-
-  margin-left: 900px;
-
-  height: 590px;
-  width: 390px;
-
-  background-color: white;
-}
-.sign-up h2 {
-  text-align: center;
 }
 
 .logo {
+  height: 64px;
+  width: 64px;
+}
+.nav-items a:hover {
+  color: purple;
+}
+
+.nav-items {
   display: flex;
-  flex: 20px;
-  margin-top: 10px;
-  margin-left: 20px;
-  justify-content: space-between;
+  align-items: end;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  justify-content: space-around;
+  background-color: black;
 }
-form {
-  width: 300px;
-  margin-left: 20px;
-}
-/**
- * CSS class for styling label elements within a form.
- */
-form label {
+
+.nav-items img {
+  height: 64px;
+  width: 64px;
   display: flex;
-  margin-top: 30px;
-  font-size: 18px;
 }
-/* 
-CSS class for styling input fields within a form.
-*/
 
-/* 
-Main functionalities:
-- Set the width and padding of the input field
-- Add a border to the input field
-- Remove the outline of the input field
-*/
-
-/* 
-Fields:
-- width: sets the width of the input field to 90%
-- padding: sets the padding of the input field to 7px
-- border: adds a 1px solid gray border to the input field
-- outline: removes the outline of the input field
-*/
-
-form input {
-  width: 90%;
-  padding: 7px;
-  border: 1px solid gray;
-  outline: none;
+.nav-items li {
+  margin-right: 10px;
 }
-/* 
-Enhanced and beautified 'input[type="text"]' class:
-*/
 
-/* 
-This class is used to style input fields of type "text" in a form. 
-The main functionality of this class is to set the height and width of the input field to 200 pixels and 100% respectively.
-*/
-
-input[type="text"] {
-  /* Set the height of the input field to 200 pixels */
-  height: 200px;
-
-  /* Set the width of the input field to 100% */
-  width: 100%;
+.nav-items li:last-child {
+  margin-right: 0;
 }
-/* 
-Enhanced and beautified 'input[type="name"]' class:
-*/
 
-/* 
-This class is used to style input fields of type "name" in a form.
-The main functionality of this class is to add a 2px solid black border to the bottom of the input field and remove the default border and outline.
-*/
-
-input[type="name"] {
-  /* Remove the default border */
-  border: none;
-
-  /* Add a 2px solid black border to the bottom */
-  border-bottom: 2px solid black;
-
-  /* Remove the default outline */
-  outline: none;
+nav {
+  height: 64px;
 }
-/**
- * CSS class for styling input fields of type "email".
- */
-input[type="email"] {
-  border: none;
-  border-bottom: 2px solid black;
-  outline: none;
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  margin-left: 45rem;
 }
-/* 
-Enhanced and Beautified 'button' class:
-*/
 
-.button {
-  /* Set the top margin of the button to 10 pixels */
-  margin-top: 10px;
-
-  /* Remove the border of the button */
-  border: none;
-
-  /* Set the padding of the button to 10 pixels on the top and bottom and 20 pixels on the left and right */
-  padding: 10px 20px;
-
-  /* Center the text of the button */
-  text-align: center;
-
-  /* Remove the text decoration of the button */
-  text-decoration: none;
-
-  /* Set the display property of the button to inline-block */
+nav ul li {
   display: inline-block;
+  margin: 0 12px;
+  padding: 15px;
+}
 
-  /* Set the font size of the button text to 16 pixels */
+nav ul li a {
+  color: #d9d9d9;
+}
+.contact h1 {
+  text-align: center;
+}
+.contact {
+  height: 33rem;
+  width: 27rem;
+  margin: 20px 10px 20px 900px;
+  border: 1px solid black ;
+}
+.name {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+}
+.email {
+  margin-bottom: 20px;
+  margin-left: 20px;
+
+}
+.message {
+  margin-bottom: 10px;
+  margin-left: 20px;
+
+}
+.button {
+  margin-bottom: 20px;
+  margin-left: 20px;
+
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+input {
+  margin-bottom: 20px;
+  width: 20rem;
+  height: 2rem;
+  padding: 5px;
+  border: none;
+  border-bottom: solid 1px black;
+}
+
+.button button {
+  padding: 10px 20px;
   font-size: 16px;
+  
 
-  /* Set the cursor style of the button to pointer */
+  border: none;
   cursor: pointer;
+  transition: background-color 0.3s;
+}
+.button button:hover {
+  background-color: rgb(193, 193, 213);
 }
