@@ -1,43 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact Us</title>
-    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="contact.css" />
+    <link rel="stylesheet" href="navbar.css" />
     <script defer src="./contact us.js"></script>
+  </head>
+  <body>
 
-</head>
-<body>
+    <nav class="nav">
+      <ul class="ul">
+        <li class="li">
+          <button onclick="onClickIndex()">Home</button>
+        </li>
+        <li class="li">
+          <button onclick="onClickAbout()">About Us</button>
+        </li>
+        <li class="li">
+          <button onclick="onClickContact()">Contact Us</button>
+        </li>
+        <li class="li">
+          <button onclick="onClickSignup()">Sign Up</button>
+        </li>
+        <li class="li">
+          <img src="logo.png" alt="Logo">
+        </li>
+      </ul>
+      
+    </nav>
     
     
-        
-        <div class="sign-up">
-          <h2>Drop Us a Line</h2>
-          <form>
-            <label for="name">Name</label>
-            <input type="name" name="name" >
-            <label for="email">Email</label>
-            <input type="email" name="email">
-            <label for="message">Type Your Message</label>
-            <input type="text" name="message">
-            <button type="submit">Sumbit</button>
-            <button type="reset">Clear Form</button>
-            <br>
-            <div class="logo">
-              <a href="https://www.instagram.com/onthespot2477/#"><img src="instagram.png"></a>
-              <a href=""><img src="discord.png"></a>
-              <a href="onthespot.help@2477@gmail.com "><img src="gmail inbox.png"></a>
-
-              
-             
-            </div>
-          </form>
-         
-        </div>
-      </div>
-    
-
-</body>
+<div class="contact">
+  <h1>Drop Us a Line </h1>
+  <div class="name">
+    <label for="name">Name</label>
+    <input type="text" id="name" placeholder="Your Name ">
+  </div>
+  <div class="email">
+    <label for="email">Email</label>
+    <input type="text" id="email" placeholder="Your Email">
+  </div>
+  <div class="message">
+    <label for="message">Message</label>
+    <input type="text" id="message" placeholder="Your Message">
+  </div>
+  <div class="button">
+    <button type="submit">Sumbit</button>
+    <button type="reset">Clear Form </button>
+  </div>
+ 
+  <div class="logo">
+    <img src="log.png" alt="Failed" />
+  </div>
+</div>
+  </body>
+  
+  
 </html>

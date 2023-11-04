@@ -1,321 +1,79 @@
-/* 
-CSS class for styling the body element of a webpage.
-Includes background image and color, text decoration, and color variables.
-Also includes styling for a feedback form.
-*/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+* {
+  font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 body {
-    /* Text decoration */
-    text-decoration: #fcfcfd;
-
-    /* Background */
-    --background: #030203;
-    --primary: #c3c1c2;
-    --secondary: #0d0d0c;
-    --accent: #8d918f;
-    background-image: url('background.jpg');
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-
-    /* Feedback form */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  background-image: url("background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
 }
 
-/* Sign-up section */
-.signup-section {
-    /* Set border to 1px solid color variable "--primary" */
-    border: 1px solid var(--primary);
-    
-    /* Set margin to 20px on top and bottom and auto on left and right */
-    margin: 20px auto;
-    
-    /* Set height to 300px */
-    height: 300px;
-    
-    /* Set width to 400px */
-    width: 400px;
-    
-    /* Set background color to color variable "--secondary" */
-    background-color: var(--secondary);
-    
-    /* Use flexbox to center the form vertically and horizontally */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+.logo {
+  height: 64px;
+  width: 64px;
 }
 
-
-
-
-/* Form */
-/**
- * CSS class for styling form elements.
- */
-.form {
-    /* Adds a left margin of 20px to create space between the form and other elements */
-    margin-left: 20px;
-}
-
-/* Form label */
-/* 
-    CSS class for styling label elements within a form.
-    Sets the font size of the label text to 16 pixels.
-*/
-
-.form label {
-    font-size: 16px;
-}
-
-/* Input fields */
-/* 
-    CSS class for styling input fields in a form.
-    Enhancements made:
-    - Added comments for better code understanding
-    - Added type hints for better code readability
-    - Removed unnecessary properties
-    - Simplified border property
-*/
-
-/* 
-    CSS class for styling input fields in a form.
-    Enhancements made:
-    - Added comments to explain each style rule
-    - Added type hints and docstrings for clarity
-    - Reorganized the style rules for better readability
-*/
-
-.input-field {
-    /* Set the width of the input field to 100% */
-    width: 100%;
-
-    /* Add a margin of 10px to the bottom of the input field */
-    margin-bottom: 10px;
-
-    /* Set the padding of the input field to 5px */
-    padding: 5px;
-
-    /* Add a 1px solid border with a color variable "--primary" */
-    border: 1px solid var(--primary);
-
-    /* Remove the outline of the input field */
-    outline: none;
-}
-
-/* Button */
-.button {
-    /* Set padding for the button */
-    padding: 10px 20px;
-
-    /* Remove border from the button */
-    border: none;
-
-    /* Set background color for the button */
-    background-color: var(--primary);
-
-    /* Set text color for the button */
-    color: var(--background);
-
-    /* Set cursor style for the button */
-    cursor: pointer;
-}
-
-.feedback {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 1px solid black;
-    margin: 10px;
-    height: 200px;
-    width: 300px;
-    background-color: #f2f2f2;
-}
-/* 
-   CSS class for the sign-up section of a webpage.
-   Adds styling to create a visually appealing sign-up section.
-*/
-
-.sign-up {
-   /* Adds a black border with a width of 2 pixels */
-   border: 2px solid black;
-
-   /* Sets a margin of 20 pixels on the top of the sign-up section */
-   margin-top: 20px;
-
-   /* Sets a margin of 900 pixels on the left and 850 pixels on the right of the sign-up section */
-   margin-left: 900px;
-   
-
-   /* Sets the height and width of the sign-up section */
-   height: 590px;
-   width: 390px;
-
-   /* Sets the background color of the sign-up section to white */
-   background-color: white;
-}
-.sign-up h2{
-    text-align: center;
-}
-
-.logo{
-    display: flex;
-    flex: 20px;
-    margin-top: 10px;
-    margin-left: 20px;
-    justify-content: space-between;
-   
-
-}
-form{
-    width: 300px;
-    margin-left: 20px;
-
-    
-}
-/**
- * CSS class for styling label elements within a form.
- */
-form label {
-  display: flex;
-  margin-top: 30px;
-  font-size: 18px;
-}
-/* 
-CSS class for styling input fields within a form.
-*/
-
-/* 
-Main functionalities:
-- Set the width and padding of the input field
-- Add a border to the input field
-- Remove the outline of the input field
-*/
-
-/* 
-Fields:
-- width: sets the width of the input field to 90%
-- padding: sets the padding of the input field to 7px
-- border: adds a 1px solid gray border to the input field
-- outline: removes the outline of the input field
-*/
-
-form input {
-    width: 90%;
-    padding: 7px;
-    border: 1px solid gray;
-    outline: none;
-}
-/* 
-Enhanced and beautified 'input[type="text"]' class:
-*/
-
-/* 
-This class is used to style input fields of type "text" in a form. 
-The main functionality of this class is to set the height and width of the input field to 200 pixels and 100% respectively.
-*/
-
-input[type="text"] {
-    /* Set the height of the input field to 200 pixels */
-    height: 200px;
-    
-    /* Set the width of the input field to 100% */
-    width: 100%;
-}
-/* 
-Enhanced and beautified 'input[type="name"]' class:
-*/
-
-/* 
-This class is used to style input fields of type "name" in a form.
-The main functionality of this class is to add a 2px solid black border to the bottom of the input field and remove the default border and outline.
-*/
-
-input[type="name"] {
-  /* Remove the default border */
-  border: none;
-  
-  /* Add a 2px solid black border to the bottom */
-  border-bottom: 2px solid black;
-  
-  /* Remove the default outline */
-  outline: none;
-}
-/**
- * CSS class for styling input fields of type "email".
- */
-input[type="email"] {
-  border: none;
-  border-bottom: 2px solid black;
-  outline: none;
-}
-/* 
-Enhanced and Beautified 'button' class:
-*/
-
-.button {
-  /* Set the top margin of the button to 10 pixels */
-  margin-top: 10px;
-
-  /* Remove the border of the button */
-  border: none;
-
-  /* Set the padding of the button to 10 pixels on the top and bottom and 20 pixels on the left and right */
-  padding: 10px 20px;
-
-  /* Center the text of the button */
+.contact h1 {
   text-align: center;
+}
+.contact {
+  height: 33rem;
+  width: 27rem;
+  margin: 20px 10px 20px 900px;
+  border: 1px solid black ;
+}
+.name {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+}
+.email {
+  margin-bottom: 20px;
+  margin-left: 20px;
 
-  /* Remove the text decoration of the button */
-  text-decoration: none;
+}
+.message {
+  margin-bottom: 10px;
+  margin-left: 20px;
 
-  /* Set the display property of the button to inline-block */
-  display: inline-block;
+}
+.button {
+  margin-bottom: 20px;
+  margin-left: 20px;
 
-  /* Set the font size of the button text to 16 pixels */
-  font-size: 16px;
-
-  /* Set the cursor style of the button to pointer */
-  cursor: pointer;
 }
 
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+input {
+  margin-bottom: 20px;
+  width: 20rem;
+  height: 2rem;
+  padding: 5px;
+  border: none;
+  border-bottom: solid 1px black;
+}
 
+.button button {
+  padding: 10px 20px;
+  font-size: 16px;
+  
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.button button:hover {
+  background-color: rgb(193, 193, 213);
+}

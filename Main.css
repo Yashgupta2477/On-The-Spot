@@ -1,32 +1,35 @@
-from {
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-}
 
-@font-face {
-  font-family: Gealsio;
-  src: url(fonts\Gelasio\Gelasio-Regular.ttf);
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+  font-weight: 12;
 }
 
 body {
-  background-image: url("Background/Background.png");
+  background-image: url('Background/Background.png');
   background-repeat: no-repeat;
+  background-position: center;
   background-size: cover;
   background-blend-mode: lighten;
-  margin: 0;
-  padding: 0;
   height: 100vh;
 }
-
-.logo{
-  height: 64px;
-  width: 64px;
-  display: flex;
-
+form.nosubmit {
+  border: none;
+  padding: 0;
 }
 
-
+input.nosubmit {
+  width: 260px;
+  border: 1px solid #555;
+  display: block;
+  padding: 9px 4px 9px 40px;
+  background: rgb(107, 105, 105) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' class='bi bi-search' viewBox='0 0 16 16'%3E%3Cpath d='M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z'%3E%3C/path%3E%3C/svg%3E") no-repeat 13px center;
+}
 .nav-items a:hover {
 
   color: purple;
@@ -42,7 +45,11 @@ body {
   justify-content: space-around;
 }
 
-
+.nav-items img {
+  height: 64px;
+  width: 64px;
+  display: flex;
+}
 
 .nav-items li {
   margin-right: 10px;
@@ -54,26 +61,34 @@ body {
 
 nav {
   height: 64px;
-  margin-left: 700px;
 }
 
 nav ul {
   list-style-type: none;
-  margin: 0;
-  padding: 0;
-  color: #fff;
 }
 
-nav ul li {
-  display: inline-block;
-  justify-content: end;
-  align-items: end;
+.ul .li button {
+  background-color: #1a1a1a;
+  font-size: 30px;
+  text-decoration: none;
+  border: 1px solid #2b2b2b;
+  border-top: none;
+  border-bottom: none;
+  height: 80px;
   padding: 20px;
+  cursor: pointer;
 }
 
-nav ul li a {
-  color: #d9d9d9;
+.ul .li img {
+  height: 84px;
+  width: 90px;
+  transform: translateX(1310%);
 }
+
+.li button:hover {
+  background-color: #b82116;
+}
+
 
 .title {
   margin-top: calc(30vh);
@@ -81,23 +96,29 @@ nav ul li a {
   color: white;
   display: grid;
   place-items: center;
+  font-size: 20px;
+  background-color: none;
+}
+.title h1{
+  font-size: 50px;
+  font-weight: 100;
 }
 
 .title h2 {
   width: 16.5ch;
-  animation: typing 2s steps(22), blink 0.5s step-end infinite alternate;
+  animation: typing 3s steps(25), blink 0.5s step-end infinite alternate;
   white-space: nowrap;
   overflow: hidden;
   border-right: 3px solid;
-  color: purple;
-  text-decoration: underline purple;
+  color: #676767;
+  font-size: 25px;
 }
 
-@keyframes typing 
+@keyframes typing {
   from {
     width: 0;
   }
-
+}
 
 @keyframes blink {
   50% {
@@ -105,59 +126,32 @@ nav ul li a {
   }
 }
 
-.brand-container {
-  margin-top: calc(100vw);
-  color: #333;
-  display: flex;
-  justify-content: flex-start;
-  padding-left: 50px;
-  margin-top: 50px;
-  flex: 1;
-  justify-content: space-between;
-}
+
 
 .ad-1 {
   margin-top: calc(65vh);
-  height: 100px;
+  height: 50px;
   width: 100%;
   background-color: red;
   display: flex;
 }
 
-.page {
-  height: 190px;
-  width: 100%;
-  margin: -390px 0px 0px 0px;
-  padding: 0px 0px 0px 0px;
-  background-color: yellow;
+
+/* Add your default CSS styles here */
+
+/* Media queries for responsiveness */
+
+/* Small screens (up to 600px) */
+@media (max-width: 600px) {
+  /* Add CSS styles specific to small screens */
 }
 
-.choose {
-  color: black;
-  margin-top: calc(25em);
-  text-align: center;
-  text-decoration: underline;
-  text-shadow: #fff;
+/* Medium screens (601px to 900px) */
+@media (min-width: 601px) and (max-width: 900px) {
+  /* Add CSS styles specific to medium screens */
 }
 
-.logo-container {
-  display: flex;
-  justify-content: space-between;
-  margin: 15px;
-  padding: 15px;
-  border: #333 solid 1px;
-}
-
-.ad-2 {
-  display: flex;
-  background-color: red;
-  margin: 0;
-  padding: 0;
-}
-
-.latest-cars {
-  background-color: blue;
-  display: flex;
-  justify-content: center;
-  height: 500px;
+/* Large screens (901px and above) */
+@media (min-width: 901px) {
+  /* Add CSS styles specific to large screens */
 }

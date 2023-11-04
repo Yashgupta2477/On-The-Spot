@@ -1,0 +1,77 @@
+/*  */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  font-family: Alieron;
+  font-weight: 12;
+}
+/* Importing Fonts  */
+@font-face {
+  font-family: "Gealsio";
+  src: url(fonts/Gelasio/Gelasio-Regular.ttf);
+}
+@font-face {
+  font-family: "Alieron";
+  src: url(fonts/Alieron/Aileron-Light.otf);
+}
+/* End Importing Fonts */
+
+body {
+  height: 100vh;
+  width: 100%;
+}
+.video {
+  filter: blur(1);
+}
+
+.nav-items a:hover {
+  color: purple;
+}
+
+.nav-items {
+  display: flex;
+  align-items: end;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  justify-content: space-around;
+  color: white;
+  background-color: black;
+}
+
+.nav-items img {
+  display: flex;
+}
+
+.nav-items li {
+  margin-right: 10px;
+}
+
+.nav-items li:last-child {
+  margin-right: 0;
+}
+
+nav {
+  height: 64px;
+  color: black;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  color: white;
+}
+
+nav ul li {
+  display: inline-block;
+  justify-content: end;
+  align-items: end;
+  padding: 15px;
+}
+
+nav ul li a {
+  color: white;
+}
