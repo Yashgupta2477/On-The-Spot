@@ -145,3 +145,18 @@ nav ul li a {
 @media (min-width: 901px) {
   /* Add CSS styles specific to large screens */
 }
+
+.buy-car{
+  margin-top: 100vh;
+  display: flex;
+  flex: wrap;
+  gap: 10px;
+  font-size: 22px;
+  font-family: "Gealsio";
+  
+}
+.new-car{
+  height: 100px;
+  width: 100px;
+  border: .2px solid black;
+}
