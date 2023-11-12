@@ -10,10 +10,9 @@ from {
 }
 
 body {
-  background-image: url("Background/Background.png");
+  background-image: url("Background/Background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-blend-mode: lighten;
   margin: 0;
   padding: 0;
   height: 100vh;
@@ -87,26 +86,19 @@ nav ul li a {
   text-decoration: underline purple;
 }
 
-@keyframes typing 
-    from {
-  width: 0;
-}
-
 @keyframes blink {
   50% {
     border-color: transparent;
   }
 }
 
-.brand-container {
-  margin-top: calc(100vw);
-  color: #333;
-  display: flex;
-  justify-content: flex-start;
-  padding-left: 50px;
-  margin-top: 50px;
-  flex: 1;
-  justify-content: space-between;
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 16.5ch;
+  }
 }
 
 .ad-1 {
@@ -117,40 +109,4 @@ nav ul li a {
   display: flex;
 }
 
-.page {
-  height: 190px;
-  width: 100%;
-  margin: -390px 0px 0px 0px;
-  padding: 0px 0px 0px 0px;
-  background-color: yellow;
-}
 
-.choose {
-  color: black;
-  margin-top: calc(25em);
-  text-align: center;
-  text-decoration: underline;
-  text-shadow: #fff;
-}
-
-.logo-container {
-  display: flex;
-  justify-content: space-between;
-  margin: 15px;
-  padding: 15px;
-  border: #333 solid 1px;
-}
-
-.ad-2 {
-  display: flex;
-  background-color: red;
-  margin: 0;
-  padding: 0;
-}
-
-.latest-cars {
-  background-color: blue;
-  display: flex;
-  justify-content: center;
-  height: 500px;
-}
